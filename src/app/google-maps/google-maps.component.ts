@@ -39,19 +39,17 @@ export class GoogleMapsComponent implements OnInit {
       // tslint:disable-next-line
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',maxZoom: 18}).addTo(this.map);
            
-      icon({
-          iconUrl: 'my-icon.png',
-          iconSize: [38, 95],
-          iconAnchor: [22, 94],
-          popupAnchor: [-3, -76],
-          shadowUrl: 'my-icon-shadow.png',
-          shadowSize: [68, 95],
-          shadowAnchor: [22, 94]
+      let greenIcon = icon({
+          iconUrl: 'https://cdn0.iconfinder.com/data/icons/mono2/100/pin-512.png',
+          iconSize: [38, 38],
+          popupAnchor: [-3, -76]
       });
 
-      marker([22.1340084, -100.985055]).addTo(this.map)
+      marker([22.1340084, -100.985055], {icon: greenIcon}).addTo(this.map);
+
+      /*marker([22.1340084, -100.985055]).addTo(this.map)
       .bindPopup('<img src="https://cdn0.iconfinder.com/data/icons/mono2/100/pin-512.png">')
-      .openPopup();
+      .openPopup();*/
 
       //marker([22.1647257, -101.0387027]).addTo(this.map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
       
