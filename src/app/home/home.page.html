@@ -3,11 +3,16 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title class="nombre">
       OnBus
     </ion-title>
+    <ion-title>
+        <img class="logo" src="../assets/img/Logo.png"/>
+    </ion-title>
   </ion-toolbar>
+ 
 </ion-header>
+
 
 <ion-content>
     <ion-list inset>
@@ -21,7 +26,7 @@
 <ion-content>
   <app-google-maps></app-google-maps>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
-      <ion-fab-button color="Red" >
+      <ion-fab-button color="Red" (click)="presentAlert()" >
           <ion-icon name="alert"></ion-icon>
       </ion-fab-button>
   </ion-fab>

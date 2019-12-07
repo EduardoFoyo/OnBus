@@ -45,19 +45,19 @@ export class UserService {
       'Something bad happened; please try again later.');
   };
 
-  searchData(title: string, type: SearchType): Observable<any> {
-    return this.http.get(this.url).pipe(map(results => results['Search']));
-  }
+  // searchData(title: string, type: SearchType): Observable<any> {
+  //   return this.http.get(this.url).pipe(map(results => results['Search']));
+  // }
  
-  /**
-  * Get the detailed information for an ID using the "i" parameter
-  * 
-  * @param {string} id imdbID to retrieve information
-  * @returns Observable with detailed information
-  */
-  getDetails(id) {
-    return this.http.get(url);
-  }
+  // /**
+  // * Get the detailed information for an ID using the "i" parameter
+  // * 
+  // * @param {string} id imdbID to retrieve information
+  // * @returns Observable with detailed information
+  // */
+  // getDetails(id) {
+  //   return this.http.get(url);
+  // }
  
  
 }
