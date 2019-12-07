@@ -4,6 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
+
+
+import { HttpClientModule } from '@angular/common/http';
+
+
+
+
 import { HomePage } from './home.page';
 import { GoogleMapsComponent } from '../google-maps/google-maps.component';
 
@@ -13,6 +20,7 @@ import { GoogleMapsComponent } from '../google-maps/google-maps.component';
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     RouterModule.forChild([
       {
         path: '',

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Map, latLng, tileLayer, Layer, marker, icon } from 'leaflet';
 
+
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
@@ -32,7 +33,10 @@ export class GoogleMapsComponent implements OnInit {
 
   }
 
+
   loadmap() {
+
+
     setTimeout(() => {
       this.map = new Map('map').setView([22.1340084, -100.985055], 14);
       
@@ -55,5 +59,7 @@ export class GoogleMapsComponent implements OnInit {
       
     }, 50);
   }
+
+  
 
 }
